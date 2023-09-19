@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>My Second Article | 林毓姝的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Q-learning 算法  是强化学习的一种方法。Q-学习就是要记录下学习过的策略，因而告诉智能体什么情况下采取什么行动会有最大的奖励值。Q-学习不需要对环境进行建模，即使是对带有随机因素的转移函数或者奖励函数也不需要进行特别的改动就可以进行。  对于任何有限的马可夫决策过程（FMDP），Q-学习可以找到一个可以最大化所有步骤的奖励期望的策略。在给定一个部分随机的策略和无限的探索时间，Q-学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="My Second Article">
+<meta property="og:url" content="https://linxiaoxu.github.io/2023/07/14/My-Second-Article/index.html">
+<meta property="og:site_name" content="林毓姝的个人博客">
+<meta property="og:description" content="Q-learning 算法  是强化学习的一种方法。Q-学习就是要记录下学习过的策略，因而告诉智能体什么情况下采取什么行动会有最大的奖励值。Q-学习不需要对环境进行建模，即使是对带有随机因素的转移函数或者奖励函数也不需要进行特别的改动就可以进行。  对于任何有限的马可夫决策过程（FMDP），Q-学习可以找到一个可以最大化所有步骤的奖励期望的策略。在给定一个部分随机的策略和无限的探索时间，Q-学习">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://linxiaoxu.github.io/imgs/Pasted%20image%2020230708202955.png">
+<meta property="og:image" content="https://linxiaoxu.github.io/imgs/Pasted%20image%2020230709164233.png">
+<meta property="og:image" content="https://linxiaoxu.github.io/imgs/Pasted%20image%2020230709164303.png">
+<meta property="og:image" content="https://linxiaoxu.github.io/imgs/Pasted%20image%2020230709164358.png">
+<meta property="og:image" content="https://linxiaoxu.github.io/imgs/Pasted%20image%2020230709164420.png">
+<meta property="article:published_time" content="2023-07-14T06:30:42.000Z">
+<meta property="article:modified_time" content="2023-07-14T14:10:27.953Z">
+<meta property="article:author" content="LinYushu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://linxiaoxu.github.io/imgs/Pasted%20image%2020230708202955.png">
+  
+    <link rel="alternate" href="/atom.xml" title="林毓姝的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">林毓姝的个人博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">闲登小阁看新晴</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://linxiaoxu.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-My-Second-Article" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/07/14/My-Second-Article/" class="article-date">
+  <time class="dt-published" datetime="2023-07-14T06:30:42.000Z" itemprop="datePublished">2023-07-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      My Second Article
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>Q-learning 算法<br>  是强化学习的一种方法。Q-学习就是要记录下学习过的策略，因而告诉智能体什么情况下采取什么行动会有最大的奖励值。Q-学习不需要对环境进行建模，即使是对带有随机因素的转移函数或者奖励函数也不需要进行特别的改动就可以进行。<br>  对于任何有限的马可夫决策过程（FMDP），Q-学习可以找到一个可以最大化所有步骤的奖励期望的策略。在给定一个部分随机的策略和无限的探索时间，Q-学习可以给出一个最佳的动作选择策略。<br>  “Q”这个字母在强化学习中表示一个动作的期望奖励。<br><img src="/imgs/Pasted%20image%2020230708202955.png"></li>
+<li>遗传算法<br>  是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%95%B0%E5%AD%A6" title="计算数学">计算数学</a>中用于解决<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9C%80%E4%BD%B3%E5%8C%96" title="最优化">最优化</a>的搜索<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95" title="算法">算法</a>，是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BF%9B%E5%8C%96%E7%AE%97%E6%B3%95" title="进化算法">进化算法</a>的一种。<br>  遗传算法通常实现方式为一种<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A8%A1%E6%8B%9F" title="计算机模拟">计算机模拟</a>。对于一个最优化问题，一定数量的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title=%E5%80%99%E9%80%89%E8%A7%A3&action=edit&redlink=1" title="候选解（页面不存在）">候选解</a>（称为个体）可抽象表示为<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9F%93%E8%89%B2%E9%AB%94_(%E9%81%BA%E5%82%B3%E6%BC%94%E7%AE%97%E6%B3%95)" title="染色体 (遗传算法)">染色体</a>，使<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%A7%8D%E7%BE%A4" title="种群">种群</a>向更好的解进化。传统上，解用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6" title="二进制">二进制</a>表示（即0和1的串），但也可以用其他表示方法。进化从完全<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%9A%8F%E6%9C%BA" title="随机">随机</a>个体的种群开始，之后一代一代发生。在每一代中评价整个种群的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%80%82%E5%BA%94%E5%BA%A6" title="适应度">适应度</a>，从当前种群中随机地选择多个个体（基于它们的适应度），通过自然选择和突变产生新的生命种群，该种群在算法的下一次迭代中成为当前种群。<ul>
+<li>精英保留<br>  遗传算法(Genetic Algorithm)中的基因，并不一定真实地反映了待求解问题的本质，因此各个基因之间未必就相互独立，如果只是简单地进行杂交，很可能把较好的组合给破坏了，这样就没有达到累积较好基因的目的，反而把原本很好的基因给破坏了。精英保留策略可以避免最优个体不会因为杂交操作而被破坏。<br>  “精英保留”(maintain the best solution found over time before selection)策略是De Jong针对遗传算法提出来的。对遗传算法来说，能否收敛到全局最优解是其首要问题。</li>
+<li>轮盘赌<br>  轮盘赌选择法（roulette wheel selection）是最简单也是最常用的选择方法，在该方法中，各个个体的选择概率和其适应度值成比例，适应度越大，选中概率也越大。但实际在进行轮盘赌选择时个体的选择往往不是依据个体的选择概率，而是根据“累积概率”来进行选择。<br>  操作过程：<br>  以一个实例来讲述轮盘赌选择法的具体过程，现有一个抽奖轮盘如下：<br>  <img src="/imgs/Pasted%20image%2020230709164233.png"><br>  显然，当我们直接转动轮盘时抽到“参与奖”的概率最大，因为它占总体的比例最高，这也体现了“轮盘赌选择法”中所占比例越大被选中概率越高的思想。但我们一般不采用抽中“几等奖”的概率这种定性的指标来表述每个部分被选中的概率，而是引入“适应度”与“累积概率”的概念，其中每个部分被选中的概率与其适应度值成比例。设某一部分x(i)的适应度值表示为f(xi)，该部分被选中的概率为p(xi)，累积概率为q(xi)，对应的计算公式如下：<br>  <img src="/imgs/Pasted%20image%2020230709164303.png"><br>  上式中的累积概率表示每个个体之前所有个体的选择概率之和，它相当于在转盘上的“跨度”，“跨度”越大越容易选到，就相当于概率论中的概率分布函数F(x)。轮盘赌选择法的过程如下：<br>  （1）计算每个个体的被选中概率p(xi)<br>  （2）计算每个部分的累积概率q(xi)<br>  （3）随机生成一个数组m，数组中的元素取值范围在0和1之间，并将其按从小到大的方式进行排序。若累积概率q(xi)大于数组中的元素m[i]，则个体x(i)被选中，若小于m[i]，则比较下一个个体x(i+1)直至选出一个个体为止。<br>  （4）若需要转中N个个体，则将步骤（3）重复N次即可<br>  看了上面的选择过程我们可能有这样的疑问：由于个体的选择是以“累积概率”为标准的，但一个个体的累积概率q(xi)大并不表示它的选中p(xi)也大，因为根据q(xi)的计算公式我们知道累积概率表示的是每个个体之前所有个体的选择概率之和，<strong>这难道不会导致某些个体明明选中概率很小但却因为它位置靠后而导致其累积概率很大而被选中的情况发生吗？显然这与轮盘赌选择法的初衷是矛盾的啊！</strong><br>  为了验证上述情况是否会发生，以上面的“轮盘抽奖游戏”为例，给每个奖项给定一个编号，编号的数字代表了他在总体中的位置，如下：<br>  <img src="/imgs/Pasted%20image%2020230709164358.png"><br>  由表格可以看到：“一等奖”的选中概率最小，但却因为其编号最大导致其累积概率为1，那是否会出现一等奖百分比会被选中的事件出现呢？为了验证结果，在Matlab中进行实验。进行1000次轮盘抽奖，并记录每次抽奖的编号，得到结果如下表所示：<br>  <img src="/imgs/Pasted%20image%2020230709164420.png"><br>  从最终的结果可以看出，采用累积概率的方式并没有出现“抽中一等奖”事件的概率很大的结果，反而最终的结果和每个奖项的选中概率相近，这说明采用累积概率的轮盘赌选择法是切实可行的，且其选择结果误差很小。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://linxiaoxu.github.io/2023/07/14/My-Second-Article/" data-id="clmqcxp9d0001w8q52lpk9gvz" data-title="My Second Article" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/07/14/about/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          about
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/07/14/My-First-Article/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">My First Article</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">九月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">七月 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/19/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/14/links/">links</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/14/about/">about</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/14/My-Second-Article/">My Second Article</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/14/My-First-Article/">My First Article</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 LinYushu<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
